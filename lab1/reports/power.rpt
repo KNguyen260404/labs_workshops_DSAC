@@ -1,0 +1,62 @@
+Loading db file '/home/Khach123/Documents/Nguyen/me_labs/liberty/saed14rvt_ff0p88v125c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : counter
+Version: W-2024.09-SP3
+Date   : Thu Jul  3 15:23:00 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed14rvt_ff0p88v125c (File: /home/Khach123/Documents/Nguyen/me_labs/liberty/saed14rvt_ff0p88v125c.db)
+
+
+Operating Conditions: ff0p88v125c   Library: saed14rvt_ff0p88v125c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+counter                ForQA             saed14rvt_ff0p88v125c
+
+
+Global Operating Voltage = 0.88 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   1.0691 uW   (92%)
+  Net Switching Power  =  93.8972 nW    (8%)
+                         ---------
+Total Dynamic Power    =   1.1630 uW  (100%)
+
+Cell Leakage Power     = 623.2733 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.9742            0.0000            0.0000            0.9742  (  54.54%)  i
+register       6.4019e-02        4.3325e-02        2.7446e+05            0.3818  (  21.37%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  3.0855e-02        5.0572e-02        3.4881e+05            0.4302  (  24.09%)
+--------------------------------------------------------------------------------------------------
+Total              1.0691 uW     9.3897e-02 uW     6.2327e+05 pW         1.7863 uW
+1

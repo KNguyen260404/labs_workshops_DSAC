@@ -1,0 +1,62 @@
+Loading db file '/home/Khach123/Documents/Nguyen/me_labs/liberty/saed14rvt_ff0p88v125c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Bit_Stream
+Version: W-2024.09-SP3
+Date   : Thu Jul 17 09:54:38 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed14rvt_ff0p88v125c (File: /home/Khach123/Documents/Nguyen/me_labs/liberty/saed14rvt_ff0p88v125c.db)
+
+
+Operating Conditions: ff0p88v125c   Library: saed14rvt_ff0p88v125c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Bit_Stream             ForQA             saed14rvt_ff0p88v125c
+
+
+Global Operating Voltage = 0.88 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   1.1482 uW  (100%)
+  Net Switching Power  =   4.2577 nW    (0%)
+                         ---------
+Total Dynamic Power    =   1.1525 uW  (100%)
+
+Cell Leakage Power     = 399.8792 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      1.1386            0.0000            0.0000            1.1386  (  73.35%)  i
+register       6.1524e-03            0.0000        2.7036e+05            0.2765  (  17.81%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  3.4827e-03        4.2577e-03        1.2952e+05            0.1373  (   8.84%)
+--------------------------------------------------------------------------------------------------
+Total              1.1482 uW     4.2577e-03 uW     3.9988e+05 pW         1.5523 uW
+1

@@ -1,0 +1,27 @@
+Phase: set_top - reference
+  Begin   : Tue Jul 15 14:57:09 2025
+  End     : Tue Jul 15 14:57:10 2025
+  Duration: 0.00 hours
+  Memory  : 2.5 -> 2.5 GB (2.5 GB max, 9.4 GB free)
+
+Phase: set_top - implementation
+  Begin   : Tue Jul 15 14:57:12 2025
+  End     : Tue Jul 15 14:57:12 2025
+  Duration: 0.00 hours
+  Memory  : 2.5 -> 2.5 GB (2.5 GB max, 9.3 GB free)
+
+Phase: match
+  Begin   : Tue Jul 15 14:57:12 2025
+  End     : Tue Jul 15 14:57:13 2025
+  Duration: 0.00 hours
+  Memory  : 2.5 -> 2.5 GB (2.5 GB max, 9.3 GB free)
+
+Phase: verify
+  Begin   : Tue Jul 15 14:57:13 2025
+  End     : Tue Jul 15 14:57:14 2025
+  Duration: 0.00 hours
+  Memory  : 2.5 -> 2.5 GB (2.5 GB max, 9.3 GB free)
+  Status  : Verification SUCCEEDED
+  Status  : 0F/0A/16P/0U
+  Status  : 100.00% passed
+

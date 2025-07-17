@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Bit_Stream
+Version: W-2024.09-SP3
+Date   : Thu Jul 17 09:54:32 2025
+****************************************
+
+Operating Conditions: ff0p88v125c   Library: saed14rvt_ff0p88v125c
+Wire Load Model Mode: top
+
+  Startpoint: state_reg[0]/CK
+              (internal path startpoint clocked by clk)
+  Endpoint: state[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Bit_Stream         ForQA                 saed14rvt_ff0p88v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  state_reg[0]/CK (SAEDRVT14_FDPRBQ_V2LP_1)               0.00       0.00 r
+  state_reg[0]/Q (SAEDRVT14_FDPRBQ_V2LP_1)                0.02       0.02 r
+  state[0] (out)                                          0.00       0.02 r
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -3.00       6.80
+  data required time                                                 6.80
+  --------------------------------------------------------------------------
+  data required time                                                 6.80
+  data arrival time                                                 -0.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.78
+
+
+1
