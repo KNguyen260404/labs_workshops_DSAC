@@ -6,16 +6,16 @@ Report : timing
         -max_paths 1
 Design : fifo
 Version: W-2024.09-SP3
-Date   : Thu Jul 17 10:36:36 2025
+Date   : Thu Jul 17 14:47:43 2025
 ****************************************
 
 Operating Conditions: ff0p88v125c   Library: saed14rvt_ff0p88v125c
 Wire Load Model Mode: top
 
-  Startpoint: read_pointer/r_ptr_reg[1]/CK
-              (internal path startpoint clocked by clk)
-  Endpoint: memory_array/mem_flat_reg[8]
-            (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: read_pointer/r_ptr_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_out[0]
+            (output port clocked by clk)
   Path Group: clk
   Path Type: max
 
@@ -27,50 +27,35 @@ Wire Load Model Mode: top
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  input external delay                                    0.00       0.00 r
   read_pointer/r_ptr_reg[1]/CK (SAEDRVT14_FDPRBQ_V2LP_1)
                                                           0.00       0.00 r
   read_pointer/r_ptr_reg[1]/Q (SAEDRVT14_FDPRBQ_V2LP_1)
-                                                          0.03       0.03 r
+                                                          0.02       0.02 f
   read_pointer/r_ptr[1] (Read_pointer_DATASIZE8_DEPTH16_PTR_WIDTH4)
-                                                          0.00       0.03 r
-  memory_state/r_ptr[1] (Memory_State_DATASIZE8_DEPTH16_PTR_WIDTH4)
-                                                          0.00       0.03 r
-  memory_state/U8/X (SAEDRVT14_EO2_V1_0P75)               0.04       0.06 r
-  memory_state/U11/X (SAEDRVT14_OR4_1)                    0.02       0.08 r
-  memory_state/U15/X (SAEDRVT14_NR2_MM_0P5)               0.01       0.10 f
-  memory_state/fifo_full (Memory_State_DATASIZE8_DEPTH16_PTR_WIDTH4)
-                                                          0.00       0.10 f
-  write_pointer/fifo_full (Write_pointer_DATASIZE8_DEPTH16_PTR_WIDTH4)
-                                                          0.00       0.10 f
-  write_pointer/U3/X (SAEDRVT14_ND2B_U_0P5)               0.03       0.13 f
-  write_pointer/U10/X (SAEDRVT14_INV_PS_1)                0.03       0.15 r
-  write_pointer/fifo_w_en (Write_pointer_DATASIZE8_DEPTH16_PTR_WIDTH4)
-                                                          0.00       0.15 r
-  memory_array/fifo_w_en (Memory_Array_DATASIZE8_DEPTH16_PTR_WIDTH4)
-                                                          0.00       0.15 r
-  memory_array/U287/X (SAEDRVT14_INV_S_0P5)               0.02       0.17 f
-  memory_array/U253/X (SAEDRVT14_NR2_MM_0P5)              0.01       0.18 r
-  memory_array/U29/X (SAEDRVT14_AN2_1)                    0.02       0.20 r
-  memory_array/U13/X (SAEDRVT14_ND2_CDC_0P5)              0.03       0.23 f
-  memory_array/U4/X (SAEDRVT14_INV_1P5)                   0.03       0.25 r
-  memory_array/U104/X (SAEDRVT14_OAI22_0P75)              0.02       0.27 f
-  memory_array/mem_flat_reg[8]/D (SAEDRVT14_FDPQB_V2LP_1)
-                                                          0.01       0.28 f
-  data arrival time                                                  0.28
+                                                          0.00       0.02 f
+  memory_array/r_ptr[1] (Memory_Array_DATASIZE8_DEPTH16_PTR_WIDTH4)
+                                                          0.00       0.02 f
+  memory_array/U240/CKOUTB (SAEDRVT14_CLKSPLT_1)          0.07       0.09 r
+  memory_array/U4/X (SAEDRVT14_ND2_CDC_0P5)               0.02       0.12 f
+  memory_array/U241/X (SAEDRVT14_BUF_ECO_1)               0.03       0.15 f
+  memory_array/U24/X (SAEDRVT14_OAI22_0P75)               0.02       0.17 r
+  memory_array/U285/X (SAEDRVT14_OR4_1)                   0.02       0.19 r
+  memory_array/U16/X (SAEDRVT14_AO22_1)                   0.01       0.20 r
+  memory_array/data_out[0] (Memory_Array_DATASIZE8_DEPTH16_PTR_WIDTH4)
+                                                          0.00       0.20 r
+  data_out[0] (out)                                       0.00       0.20 r
+  data arrival time                                                  0.20
 
-  clock clk (rise edge)                                  10.00      10.00
-  clock network delay (ideal)                             0.00      10.00
-  clock uncertainty                                      -0.20       9.80
-  memory_array/mem_flat_reg[8]/CK (SAEDRVT14_FDPQB_V2LP_1)
-                                                          0.00       9.80 r
-  library setup time                                     -0.01       9.79
-  data required time                                                 9.79
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.20       0.80
+  output external delay                                  -0.20       0.60
+  data required time                                                 0.60
   --------------------------------------------------------------------------
-  data required time                                                 9.79
-  data arrival time                                                 -0.28
+  data required time                                                 0.60
+  data arrival time                                                 -0.20
   --------------------------------------------------------------------------
-  slack (MET)                                                        9.51
+  slack (MET)                                                        0.40
 
 
 1

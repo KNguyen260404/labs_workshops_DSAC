@@ -1,28 +1,15 @@
-# ========================== CLOCK CONSTRAINT ==========================
-
-# Giả sử clock 100 MHz => period = 10ns, duty cycle 50%
-create_clock -name clk -period 10.0 [get_ports clk]
-
+# ======================== CLOCK =============================
+create_clock -name clk -period 1.000 [get_ports clk]
 # ========================== INPUT DELAYS ==========================
-
-# Giả định môi trường bên ngoài cung cấp tín hiệu đồng bộ với clk
-set_input_delay 3.0 -clock clk [get_ports din]
-set_input_delay 3.0 -clock clk [get_ports rst_n]
-
+set_input_delay -clock clk 0.2 [remove_from_collection [all_inputs] [get_ports clk]]
 # ========================== OUTPUT DELAYS ==========================
 
-# Tín hiệu 'lock' và 'state*' được các thiết bị bên ngoài (ví dụ testbench) lấy mẫu
-set_output_delay 3.0 -clock clk [get_ports lock]
-set_output_delay 3.0 -clock clk [get_ports state*]
+set_output_delay -clock clk 0.2 [all_outputs]
+set_fix_hold [get_clocks clk]
+
+
 
 # ========================== ASYNC RESET ==========================
-
-# Reset bất đồng bộ, dùng case analysis để loại khỏi phân tích timing
-set_case_analysis 0 [get_ports rst_n]
-
-# Hoặc có thể dùng false path để bỏ qua mọi path từ rst_n
-# set_false_path -from [get_ports rst_n]
-
 # ========================== DESIGN RULES ==========================
 
 # Giới hạn thời gian chuyển mạch (transition) đầu vào tối đa 0.5ns

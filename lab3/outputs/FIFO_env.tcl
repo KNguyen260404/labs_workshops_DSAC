@@ -1,6 +1,6 @@
 ###################################################################
 
-# Created by write_script -format dctcl on Thu Jul 17 10:36:42 2025
+# Created by write_script -format dctcl on Thu Jul 17 14:47:48 2025
 
 ###################################################################
 
@@ -40,9 +40,19 @@ set_max_transition 0.5 [get_ports {data_in[3]}]
 set_max_transition 0.5 [get_ports {data_in[2]}]
 set_max_transition 0.5 [get_ports {data_in[1]}]
 set_max_transition 0.5 [get_ports {data_in[0]}]
-set_case_analysis 0 [get_ports rst_n]
-create_clock [get_ports clk]  -period 10  -waveform {0 5}
+create_clock [get_ports clk]  -period 1  -waveform {0 0.5}
 set_clock_uncertainty 0.2  [get_clocks clk]
-set_input_delay -clock clk  3  [get_ports rst_n]
+set_output_delay -clock clk  0.2  [get_ports {data_out[7]}]
+set_output_delay -clock clk  0.2  [get_ports {data_out[6]}]
+set_output_delay -clock clk  0.2  [get_ports {data_out[5]}]
+set_output_delay -clock clk  0.2  [get_ports {data_out[4]}]
+set_output_delay -clock clk  0.2  [get_ports {data_out[3]}]
+set_output_delay -clock clk  0.2  [get_ports {data_out[2]}]
+set_output_delay -clock clk  0.2  [get_ports {data_out[1]}]
+set_output_delay -clock clk  0.2  [get_ports {data_out[0]}]
+set_output_delay -clock clk  0.2  [get_ports fifo_full]
+set_output_delay -clock clk  0.2  [get_ports fifo_empty]
+set_output_delay -clock clk  0.2  [get_ports fifo_overflow_flag]
+set_output_delay -clock clk  0.2  [get_ports fifo_underflow_flag]
 set compile_inbound_cell_optimization false
 set compile_inbound_max_cell_percentage 10.0

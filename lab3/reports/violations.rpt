@@ -1,0 +1,23 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : Write_pointer_DATASIZE8_DEPTH16_PTR_WIDTH4
+Version: W-2024.09-SP3
+Date   : Thu Jul 17 14:50:45 2025
+****************************************
+
+
+   min_delay/hold ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   w_ptr_reg[4]/D               0.20           0.05 f        -0.15  (VIOLATED)
+   w_ptr_reg[1]/D               0.20           0.05 f        -0.15  (VIOLATED)
+   w_ptr_reg[2]/D               0.20           0.05 f        -0.15  (VIOLATED)
+   w_ptr_reg[3]/D               0.20           0.05 f        -0.15  (VIOLATED)
+   w_ptr_reg[0]/D               0.20           0.06 f        -0.15  (VIOLATED)
+
+
+1

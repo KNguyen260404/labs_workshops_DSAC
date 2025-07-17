@@ -3,7 +3,7 @@
 Report : area
 Design : fifo
 Version: W-2024.09-SP3
-Date   : Thu Jul 17 10:36:36 2025
+Date   : Thu Jul 17 14:47:43 2025
 ****************************************
 
 Information: Updating design information... (UID-85)
@@ -12,20 +12,20 @@ Library(s) Used:
     saed14rvt_ff0p88v125c (File: /home/Khach123/Documents/Nguyen/me_labs/liberty/saed14rvt_ff0p88v125c.db)
 
 Number of ports:                           93
-Number of nets:                           547
-Number of cells:                          467
-Number of combinational cells:            323
+Number of nets:                           554
+Number of cells:                          473
+Number of combinational cells:            329
 Number of sequential cells:               140
 Number of macros/black boxes:               0
-Number of buf/inv:                         37
+Number of buf/inv:                         42
 Number of references:                       4
 
-Combinational area:                100.033197
-Buf/Inv area:                        6.748800
+Combinational area:                102.208797
+Buf/Inv area:                        8.702400
 Noncombinational area:             120.767997
 Macro/Black Box area:                0.000000
-Net Interconnect area:             395.484678
+Net Interconnect area:             391.748271
 
-Total cell area:                   220.801195
-Total area:                        616.285873
+Total cell area:                   222.976795
+Total area:                        614.725065
 1

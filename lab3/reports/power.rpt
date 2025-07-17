@@ -8,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : fifo
 Version: W-2024.09-SP3
-Date   : Thu Jul 17 10:36:42 2025
+Date   : Thu Jul 17 14:47:48 2025
 ****************************************
 
 
@@ -39,12 +39,12 @@ Attributes
 i - Including register clock pin internal power
 
 
-  Cell Internal Power  =  16.0395 uW   (98%)
-  Net Switching Power  = 252.5617 nW    (2%)
+  Cell Internal Power  = 164.7409 uW   (96%)
+  Net Switching Power  =   6.3225 uW    (4%)
                          ---------
-Total Dynamic Power    =  16.2921 uW  (100%)
+Total Dynamic Power    = 171.0634 uW  (100%)
 
-Cell Leakage Power     =   8.8126 uW
+Cell Leakage Power     =   8.6347 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -53,10 +53,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network     15.9523            0.0000            0.0000           15.9523  (  63.54%)  i
-register       4.8659e-02        1.2918e-02        4.7320e+06            4.7935  (  19.09%)
+clock_network    160.8770            0.0000            0.0000          160.8770  (  89.53%)  i
+register           2.1336            0.8737        5.3596e+06            8.3669  (   4.66%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational  3.8537e-02            0.2396        4.0807e+06            4.3589  (  17.36%)
+combinational      1.7303            5.4488        3.2751e+06           10.4543  (   5.82%)
 --------------------------------------------------------------------------------------------------
-Total             16.0395 uW         0.2526 uW     8.8126e+06 pW        25.1047 uW
+Total            164.7409 uW         6.3225 uW     8.6347e+06 pW       179.6981 uW
 1

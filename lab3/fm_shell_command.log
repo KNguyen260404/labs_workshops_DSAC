@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running fm_shell Version W-2024.09-SP5 for linux64 -- Apr  9, 2025
-#@ # Date:   Thu Jul 17 10:44:28 2025
+#@ # Date:   Thu Jul 17 14:48:12 2025
 #@ # Run by: Khach123@dsac123
 #@ 
 
@@ -91,3 +91,4 @@ source -echo -verbose LEC/lab3_lec.tcl
 #@ 
 #@ # -- End source LEC/lab3_lec.tcl
 
+exit

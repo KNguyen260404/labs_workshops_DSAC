@@ -5,7 +5,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 895.363
+cpu MHz		: 801.108
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -33,7 +33,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 3182.375
+cpu MHz		: 800.894
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -61,7 +61,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 3352.251
+cpu MHz		: 3700.037
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -89,7 +89,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 1631.804
+cpu MHz		: 800.000
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -117,7 +117,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 800.000
+cpu MHz		: 1748.958
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -145,7 +145,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 3044.912
+cpu MHz		: 1200.974
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -173,7 +173,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 3700.000
+cpu MHz		: 800.000
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -201,7 +201,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 3700.000
+cpu MHz		: 2098.387
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -229,7 +229,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 3198.998
+cpu MHz		: 2965.153
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -257,7 +257,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 800.000
+cpu MHz		: 800.584
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -285,7 +285,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 3700.000
+cpu MHz		: 800.316
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -313,7 +313,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 3700.000
+cpu MHz		: 2336.620
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -341,7 +341,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 799.652
+cpu MHz		: 800.285
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -369,7 +369,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 3610.481
+cpu MHz		: 801.796
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -397,7 +397,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 2347.176
+cpu MHz		: 800.000
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -425,7 +425,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 2420.388
+cpu MHz		: 800.000
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -453,7 +453,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 2284.409
+cpu MHz		: 800.000
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -481,7 +481,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 2239.000
+cpu MHz		: 798.720
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -537,7 +537,7 @@ model		: 191
 model name	: Intel(R) Core(TM) i5-14500
 stepping	: 2
 microcode	: 0x3a
-cpu MHz		: 800.000
+cpu MHz		: 801.412
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
